@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Footer from "./component/Footer";
 import Hero from "./component/Hero";
 import Nav from "./component/Nav";
 import Technologies from "./component/Technologies";
@@ -19,6 +20,7 @@ function App() {
       <Suspense fallback={<p>Loading technologies...</p>}>
         <Technologies technologiesPromise={technologiesPromise} />
       </Suspense>
+      <Footer />
     </>
   );
 }
