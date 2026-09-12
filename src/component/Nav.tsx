@@ -2,7 +2,7 @@ import logo from "../assets/logo-text.png";
 
 const Nav = () => {
   return (
-    <header className="border-b border-slate-100 bg-white">
+    <header className="border-b border-slate-100 bg-white fixed">
       <nav className="mx-auto flex min-h-[82px] min-w-[1100px] items-center justify-evenly px-16 py-4">
         <a href="#home" aria-label="DevStack home" className="shrink-0">
           <img src={logo} alt="DevStack" className="h-11 w-auto" />
@@ -13,7 +13,7 @@ const Nav = () => {
             <li>
               <a
                 href="#home"
-                className="font-medium text-[#df1476] transition-colors hover:text-[#b50d5c]"
+                className="text-base font-medium text-[#df1476] transition-colors hover:text-[#b50d5c]"
               >
                 Home
               </a>
@@ -21,7 +21,7 @@ const Nav = () => {
             <li>
               <a
                 href="#technologies"
-                className="font-medium text-slate-600 transition-colors hover:text-[#df1476]"
+                className="text-base font-medium text-slate-600 transition-colors hover:text-[#df1476]"
               >
                 Technologies
               </a>
@@ -29,7 +29,7 @@ const Nav = () => {
             <li>
               <a
                 href="#projects"
-                className="font-medium text-slate-600 transition-colors hover:text-[#df1476]"
+                className="text-base font-medium text-slate-600 transition-colors hover:text-[#df1476]"
               >
                 Projects
               </a>
@@ -37,7 +37,7 @@ const Nav = () => {
             <li>
               <a
                 href="#about"
-                className="font-medium text-slate-600 transition-colors hover:text-[#df1476]"
+                className="text-base font-medium text-slate-600 transition-colors hover:text-[#df1476]"
               >
                 About
               </a>
@@ -45,7 +45,7 @@ const Nav = () => {
             <li>
               <a
                 href="#contact"
-                className="font-medium text-slate-600 transition-colors hover:text-[#df1476]"
+                className="text-base font-medium text-slate-600 transition-colors hover:text-[#df1476]"
               >
                 Contact
               </a>
@@ -55,13 +55,13 @@ const Nav = () => {
           <div className="flex items-center gap-7">
             <a
               href="#sign-in"
-              className="font-medium text-slate-600 transition-colors hover:text-[#df1476]"
+              className="text-base font-medium text-slate-600 transition-colors hover:text-[#df1476]"
             >
               Sign In
             </a>
             <a
               href="#sign-up"
-              className="rounded-full bg-[#df1476] px-7 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-[#b50d5c]"
+              className="rounded-full bg-[#df1476] px-7 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#b50d5c]"
             >
               Sign Up
             </a>
