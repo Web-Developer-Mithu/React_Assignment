@@ -2,6 +2,7 @@
 
 :root {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  --brand-gradient: linear-gradient(90deg, #ff7618 0%, #ed235d 52%, #9c26ca 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +11,15 @@
 
 body {
   margin: 0;
+}
+
+.brand-gradient {
+  background: var(--brand-gradient);
+}
+
+.brand-gradient-text {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

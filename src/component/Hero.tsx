@@ -2,24 +2,25 @@ import stackImage from "../assets/banner-stack.png";
 
 const Hero = () => {
   return (
-    <section className="flex min-h-[500px] items-center justify-between gap-20 bg-white px-20 py-16">
-      <div className="w-[52%]">
-        <h1 className="max-w-[620px] text-[48px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#10182d]">
+    <section
+      id="home"
+      className="scroll-mt-24 flex min-h-125 flex-col items-center justify-between gap-10 bg-white px-5 pb-12 pt-28 sm:px-8 sm:pb-16 lg:flex-row lg:gap-20 lg:px-20 lg:pt-32"
+    >
+      <div className="w-full lg:w-[52%]">
+        <h1 className="max-w-155 text-[36px] font-extrabold leading-[1.05] tracking-[-1.5px] text-[#10182d] sm:text-[48px]">
           Build Your Ideal
-          <span className="block bg-gradient-to-r from-[#ff4b22] via-[#ed235d] to-[#9c26ca] bg-clip-text text-transparent">
-            Development Stack
-          </span>
+          <span className="brand-gradient-text block">Development Stack</span>
         </h1>
 
-        <p className="mt-5 max-w-[560px] text-[15px] leading-6 text-slate-500">
+        <p className="mt-5 max-w-140 text-[15px] leading-6 text-slate-500">
           Explore frontend, backend, database, and tooling options, compare them
           side by side, and put together the stack that fits your next project.
         </p>
 
-        <div className="mt-10 flex items-center gap-3">
+        <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-10">
           <a
             href="#technologies"
-            className="rounded-md bg-gradient-to-r from-[#ff7618] to-[#e92c8b] px-3 py-2 text-xs font-bold text-white shadow-sm"
+            className="brand-gradient rounded-md px-3 py-2 text-xs font-bold text-white shadow-sm"
           >
             Explore Technologies
           </a>
@@ -32,11 +33,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex w-[42%] justify-center">
+      <div className="flex w-full justify-center lg:w-[42%]">
         <img
           src={stackImage}
           alt="Development technology stack"
-          className="h-[300px] w-[300px] object-contain"
+          className="h-60 w-60 object-contain sm:h-75 sm:w-75"
         />
       </div>
     </section>

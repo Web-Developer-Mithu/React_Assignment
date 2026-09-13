@@ -2,8 +2,8 @@ import logo from "../assets/logo-text.png";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-slate-100 bg-white px-20 py-16 text-[#71809b]">
-      <div className="mx-auto grid max-w-300 grid-cols-[2fr_1fr_1fr_1fr] gap-16">
+    <footer className="border-t border-slate-100 bg-white px-5 py-12 text-[#71809b] sm:px-8 sm:py-16 lg:px-20">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:gap-16">
         <div>
           <img src={logo} alt="DevStack" className="h-9 w-auto" />
           <p className="mt-5 max-w-97.5 text-sm leading-6">
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-16 flex max-w-300 items-center justify-between border-t border-slate-100 pt-8 text-sm">
+      <div className="mx-auto mt-12 flex max-w-300 flex-col gap-4 border-t border-slate-100 pt-8 text-sm sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
         <p>&copy; 2026 DevStack. All rights reserved.</p>
         <div className="flex gap-8">
           <a href="#privacy" className="hover:text-[#df1476]">
