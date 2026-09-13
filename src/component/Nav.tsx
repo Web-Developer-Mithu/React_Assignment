@@ -7,13 +7,13 @@ const Nav = () => {
 
   return (
     <header className="fixed z-10 w-full border-b border-slate-100 bg-white">
-      <nav className="relative mx-auto flex min-h-[82px] items-center justify-between px-5 py-4 md:px-8 lg:px-16">
+      <nav className="relative mx-auto flex min-h-20.5 items-center justify-between px-3 py-4 sm:px-5 lg:px-16">
         <button
           type="button"
           aria-label="Toggle navigation menu"
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((open) => !open)}
-          className="flex h-10 w-10 items-center justify-center text-slate-700 md:hidden"
+          className="flex h-10 w-10 shrink-0 items-center justify-center text-slate-700 lg:hidden"
         >
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
@@ -21,13 +21,17 @@ const Nav = () => {
         <a
           href="#home"
           aria-label="DevStack home"
-          className="absolute left-1/2 -translate-x-1/2 shrink-0 md:static md:translate-x-0"
+          className="absolute left-1/2 -translate-x-1/2 shrink-0 lg:static lg:translate-x-0"
         >
-          <img src={logo} alt="DevStack" className="h-9 w-auto md:h-11" />
+          <img
+            src={logo}
+            alt="DevStack"
+            className="h-8 w-auto sm:h-9 lg:h-11"
+          />
         </a>
 
         <ul
-          className={`${isMenuOpen ? "flex" : "hidden"} absolute left-0 top-[82px] w-full flex-col gap-5 border-b border-slate-100 bg-white px-5 py-5 md:left-1/2 md:top-1/2 md:flex md:w-auto md:-translate-x-1/2 md:-translate-y-1/2 md:flex-row md:items-center md:gap-10 md:border-0 md:bg-transparent md:p-0`}
+          className={`${isMenuOpen ? "flex" : "hidden"} absolute left-0 top-20.5 w-full flex-col gap-5 border-b border-slate-100 bg-white px-5 py-5 lg:left-1/2 lg:top-1/2 lg:flex lg:w-auto lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex-row lg:items-center lg:gap-10 lg:border-0 lg:bg-transparent lg:p-0`}
         >
           <li>
             <a
@@ -76,16 +80,16 @@ const Nav = () => {
           </li>
         </ul>
 
-        <div className="ml-auto flex items-center gap-2 md:gap-7">
+        <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-4 lg:gap-7">
           <a
             href="#sign-in"
-            className="text-sm font-medium text-slate-600 transition-colors hover:text-[#df1476] md:text-base"
+            className="text-xs font-medium text-slate-600 transition-colors hover:text-[#df1476] sm:text-sm lg:text-base"
           >
             Sign In
           </a>
           <a
             href="#sign-up"
-            className="brand-gradient rounded-full px-4 py-2 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 md:px-7 md:py-3 md:text-base"
+            className="brand-gradient rounded-full px-3 py-2 text-xs font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:px-4 sm:text-sm lg:px-7 lg:py-3 lg:text-base"
           >
             Sign Up
           </a>
